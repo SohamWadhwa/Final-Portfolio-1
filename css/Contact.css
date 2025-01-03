@@ -1,0 +1,137 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    gap: 20px;
+}
+
+.contact-section-title {
+    font-family: "Space Grotesk";
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.contact-section-title span {
+    color: #ff3366;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1rem;
+    padding: 3rem;
+    font-family: "Space Grotesk";
+    color: #1A1A1A;
+    background: rgba(255,255,255,0.5);
+    height: 30.5vh;
+    gap: 8rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.contact-content-text-line {
+    font-size: 24px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+.contact-content-text {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 2rem;
+}
+
+.btn-email {
+    width: fit-content;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    color: #1A1A1A;
+}
+
+.icon {
+    display: flex;
+    gap: 1rem;
+    font-weight: 500;
+    color: #1A1A1A;
+    text-decoration: none;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    cursor: url(https://img.icons8.com/material-two-tone/24/blue-pointer.png), default;
+}
+
+.icon-img {
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+.icon:hover {
+    color:#ff3366;
+    text-shadow: 0 0 100px #ff3366;
+}
+
+.icon:nth-of-type(1) {
+    transform: translateX(0.5rem);
+}
+
+@media (max-width: 1024px) {
+    .contact-content {
+        height: fit-content;
+    }
+
+    .social-media {
+        z-index: 1000;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+      flex-direction: row;
+      text-align: center;
+      width: max-content;
+      height: fit-content;
+    }
+    .social-media a {
+      margin: 10px autocenter;
+    }
+  }
+
+@media (max-width: 480px) {
+    .contact-section-title {
+      font-size: 5rem;;
+      width: 180%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+        width: 167%;
+        gap: 1rem;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .contact-content-text {
+        flex-direction: row;
+        width: 100%;
+
+        gap: 1rem;
+    }
+
+    .btn-email {
+        height: fit-content;
+    }
+  }

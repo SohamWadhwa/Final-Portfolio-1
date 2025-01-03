@@ -1,0 +1,139 @@
+.project-container {
+    margin:50px;
+}
+
+.projects-title {
+    display: flex;
+    font-family: "Space Grotesk";
+    font-size: 48px;
+    font-weight: bold;
+    color: #1A1A1A;
+    gap: 0.7rem;
+    letter-spacing: 0.1rem;
+}
+
+.projects-title div:nth-of-type(2) {
+    color: #FF3366;
+}
+
+.project-title a {
+    text-decoration: none;
+    color: #FF3366;
+    cursor: url(https://img.icons8.com/material-two-tone/24/blue-pointer.png), default;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 50px;
+    padding-top: 20px;
+    gap: 2rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.project-title {
+    font-family: "Space Grotesk";
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF3366;
+    margin: 0;
+    cursor: url(https://img.icons8.com/material-two-tone/24/blue-pointer.png), default;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    width: fit-content;
+}
+
+.arrow {
+    transition: all 0.3s ease;
+    margin-top: 5px; 
+}
+
+.project-title:hover .arrow {
+    transform: translateX(10px);
+}
+
+.summary {
+    font-family: "Space Grotesk";
+    font-size: 18px;
+    font-weight: 350;
+    color: #1A1A1A;
+    margin: 0;
+}
+
+.divider {
+    width: 0;
+    height: 2px;
+    background-color:#1A1A1A;
+    transition: width 0.7s ease-in-out;
+}
+
+.project-preview {
+    width: 350px;
+    height: 190px;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    left: 350px;
+    top: -150px;
+    border: 1px solid #FF3366;
+    box-shadow: 0 0 100px 1px #FF3366;
+    transform: translateX(-20px);
+    transition: all 0.3s ease-in-out;
+}
+
+.project-preview.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.project-preview video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+@media (max-width: 768px) {
+    .projects {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .projects {
+        width: 133%;
+    }
+
+    .divider {
+        margin-top: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-title {
+        font-size: 5rem;
+    }
+
+    .projects {
+        width: 175%;
+    }
+
+    .project-title, .project-summary {
+        font-size: xx-large;
+    }
+
+    .divider {
+        margin-top: 1.6rem;
+    }
+  }

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.visibility = 'visible';
+            initializeAnimations();
+        });
+
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/NavBar.css"/>
+    <script src="js/navbar.js" defer></script>
+    <link rel="stylesheet" href="css/Hero.css"/>
+    <script src="js/hero.js" type="module" defer></script>
+    <link rel="stylesheet" href="css/About-me.css"/>
+    <link rel="stylesheet" href="css/Skills.css"/>
+    <script type="module" src="js/skill.js"></script>
+    <link rel="stylesheet" href="css/projects.css"/>
+    <script src="js/projects.js" defer></script>
+    <link rel="stylesheet" href="css/Contact.css"/>
+    <link rel="stylesheet" href="css/Footer.css"/>
+    <link rel="stylesheet" href="css/animations.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa491c06e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="data-scroll-container">
+        <nav id="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a id ="logo-content" href="#">
+                        <div class="logo-text">Portfolio</div>
+                        <div class="logo-icon"><i class="fas fa-circle" style="color: #ff3366; font-size: 8px"></i></div>
+                    </a>
+                </div>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul id = "navbar-menu">
+                    <li class="navbar-menu-item item1"><a href="#about-me">About</a></li>
+                    <li class="navbar-menu-item item2"><a href="#skills">Skills</a></li>
+                    <li class="navbar-menu-item item3"><a href="#projects">Projects</a></li>
+                    <li class="navbar-menu-item item4"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="Hero-container" id="hero">
+            <div class="Hero-content-title">
+                <h1 class="Hero-content-title-1 slide-in-left">Soham</h1>
+                <h1 class="Hero-content-title-2 slide-in-left">Wadhwa</h1>
+            </div>
+            <div class="Hero-content ">
+                Crafting exceptional digital experiences through innovative design and development.
+            </div>
+            <div class="Hero-content-btns">
+                <a class="btn-3d-animation" href="#projects">View Projects</a>
+                <a class="btn-fill-animation" href="#contact">Get In Touch</a>
+            </div>
+            <div class="Scroll-animation-container">
+                <div class="scroll-icon">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <div class="scroll-text">SCROLL</div>
+            </div>
+        </div>
+        <div class="about-me-container" id="about-me">
+            <div class="about-me-title reveal">
+                <div class="title-1">About</div>
+                <div class="title-2">Me</div>
+            </div>
+            <div class="about-me-content reveal">
+                <p>Hi, I'm <u>Soham Wadhwa</u>, a passionate and driven Computer Science Engineering student at MSIT Delhi. With a strong foundation in C, C++, and Python, I'm constantly honing my skills to become one of the best programmers out there.</p>
+                <p>My journey in tech is fueled by creativity, logic-building, and an insatiable curiosity to explore the ever-evolving world of programming. From solving complex problems in competitive programming to developing interactive web applications, I love turning ideas into impactful solutions.</p>
+                <p>Beyond coding, I'm a football enthusiast, a car aficionado, and an avid reader who enjoys diving into novels. These hobbies keep me inspired and balanced, fueling my creativity and critical thinking.</p>
+                <p>Take a look at my projects to see how I combine my skills and passions to create meaningful work. Let's connect and build something amazing together!</p>
+            </div>
+        </div>
+        <div class="skills-container" id="skills">
+            <div class="skills-title reveal">
+                <div>My</div><div>Skills</div>
+            </div>
+            <div class="skill-container-main">
+                <div class="web-dev-skill s-contain">
+                    <div class="web-dev-skill-title">
+                        Web Development
+                    </div>
+                    <div class="web-dev-skill-content">
+                        <div class="skill-element" id="html">
+                            <div class="progress-txt"><div>HTML</div><div class="progress-num">50%</div></div>
+                        </div>
+                        <div class="skill-element" id="css">
+                            <div class="progress-txt"><div>CSS</div><div class="progress-num">50%</div></div>
+                        </div>
+                        <div class="skill-element" id="javascript">
+                            <div class="progress-txt"><div>JavaScript</div><div class="progress-num">50%</div></div>
+                        </div>
+                        <div class="skill-element" id="nodejs">
+                            <div class="progress-txt"><div>NodeJs</div><div class="progress-num">20%</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro-lang-skill s-contain">
+                    <div class="pro-lang-skill-title">
+                        Programming Languages
+                    </div>
+                    <div class="pro-lang-skill-content">
+                        <div class="skill-element" id="c">
+                            <div class="progress-txt"><div>C</div><div class="progress-num">80%</div></div>
+                        </div>
+                        <div class="skill-element" id="cpp">
+                            <div class="progress-txt"><div>Cpp</div><div class="progress-num">60%</div></div>
+                        </div>
+                        <div class="skill-element" id="python">
+                            <div class="progress-txt"><div>Python</div><div class="progress-num">20%</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="db-oth-skill s-contain">
+                    <div class="db-oth-skill-title">
+                        Database & Others
+                    </div>
+                    <div class="db-oth-skill-content">
+                        <div class="skill-element" id="sql">
+                            <div class="progress-txt"><div>SQL</div><div class="progress-num">80%</div></div>
+                        </div>
+                        <div class="skill-element" id="dsa">
+                            <div class="progress-txt"><div>DSA</div><div class="progress-num">60%</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-container" id="projects">
+            <div class="projects-title reveal">
+                <div>My</div><div>Projects</div>
+            </div>
+            <div class="projects">
+                <div class="project">
+                    <div class="project-title reveal">
+                        <a class="credit" href="https://github.com/SohamWadhwa/Projects" target="_blank">Credit Card Validator</a>
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                    <div class="summary">
+                        A simple command line program to validate credit card numbers using python.
+                    </div>
+                    <div class="project-preview">
+                        <video class="vid" muted autoplay loop>
+                            <source src="/assets/credit.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="divider"></div>   
+                </div>
+                <div class="project">
+                    <div class="project-title reveal">
+                        <a class="movie_app" href="https://movie-app-kart.netlify.app/" target="_blank">Movie App</a>
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                    <div class="summary">
+                        A movie app that allows users to search for movies and view details about them.
+                    </div>
+                    <div class="project-preview">
+                        <video class="vid" muted autoplay loop>
+                            <source src="/assets/Movie_app.mp4" type="video/mp4">
+                        </video>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="contact-section" id="contact">
+            <div class="contact-section-title reveal">
+                Let's <span>Connect</span>
+            </div>
+            <div class="contact-content reveal">
+                <div class="contact-content-text">
+                    <div class="contact-content-text-line">Have a project in mind or just want to say hi? Feel free to reach out to me. I'm always open to new opportunities and collaborations.</div>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=soham.wadhwa2006@gmail.com" class="btn-3d-animation btn-email">Start a Conversation</a>
+                </div>
+                <div class="social-media">
+                    <a class="icon" href="https://www.linkedin.com/in/soham-wadhwa/" target="_blank" style="text-decoration: none;">
+                        <i class="ph ph-linkedin-logo icon-img"></i>
+                        <span class="icon-text">LinkedIn</span>
+                    </a>
+                    <a class="icon" href="https://github.com/SohamWadhwa/" target="_blank" style="text-decoration: none;">
+                        <i class="ph ph-github-logo icon-img"></i>
+                        <span class="icon-text">GitHub</span>
+                    </a>
+                    <a class="icon" href="https://twitter.com/SohamWadhwa_" target="_blank" style="text-decoration: none;">
+                        <i class="ph ph-twitter-logo icon-img"></i>
+                        <span class="icon-text">Twitter</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">© 2025 Soham Wadhwa. All rights reserved.</span>
+            </div>
+        </footer>
+        <a id="backToTop"><i class="ph ph-arrow-up"></i></a>
+    </div>
+</body>
+</html>
