@@ -2,6 +2,7 @@ window.addEventListener('load', () => {
     window.scrollTo(0, 0);
 });
 
+  
 function initScrollReveal() {
     const reveals = document.querySelectorAll('.reveal');
 
@@ -10,11 +11,11 @@ function initScrollReveal() {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
             } else {
-                entry.target.classList.remove('active'); // Reset animation when out of view
+                entry.target.classList.remove('active');
             }
         });
     }, {
-        threshold: 0.01, // Trigger when 10% of the element is visible
+        threshold: 0.01,
     });
 
     reveals.forEach(element => {
@@ -48,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     // Create a custom cursor element
     const cursor = document.createElement('div');
@@ -62,13 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
         cursor.style.top = `${y}px`;
     });
 });
-
-
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('[data-scroll-container]'),
-//     smooth: true, // Enables smooth scrolling
-//     multiplier: 0.1 // Adjust scroll speed (lower is slower)
-// });
 
 
 

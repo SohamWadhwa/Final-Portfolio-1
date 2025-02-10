@@ -11,10 +11,9 @@
 
     </script>
     
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js" defer></script>
     <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/NavBar.css"/>
+    <link rel="stylesheet" href="css\Navbar.css"/>
     <script src="js/navbar.js" defer></script>
     <link rel="stylesheet" href="css/Hero.css"/>
     <script src="js/hero.js" type="module" defer></script>
@@ -31,15 +30,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fa491c06e8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="data-scroll-container">
-        <nav id="navbar">
+    <div data-scroll-container>
+        <nav id="navbar section">
             <div class="navbar-container">
                 <div class="logo">
-                    <a id ="logo-content" href="#">
+                    <a id ="logo-content" href="#" data-scroll-section>
                         <div class="logo-text">Portfolio</div>
                         <div class="logo-icon"><i class="fas fa-circle" style="color: #ff3366; font-size: 8px"></i></div>
                     </a>
@@ -50,14 +49,14 @@
                     <span class="bar"></span>
                 </button>
                 <ul id = "navbar-menu">
-                    <li class="navbar-menu-item item1"><a href="#about-me">About</a></li>
-                    <li class="navbar-menu-item item2"><a href="#skills">Skills</a></li>
-                    <li class="navbar-menu-item item3"><a href="#projects">Projects</a></li>
-                    <li class="navbar-menu-item item4"><a href="#contact">Contact</a></li>
+                    <li class="navbar-menu-item item1"><a href="#about-me" data-scroll>About</a></li>
+                    <li class="navbar-menu-item item2"><a href="#skills" data-scroll>Skills</a></li>
+                    <li class="navbar-menu-item item3"><a href="#projects" data-scroll>Projects</a></li>
+                    <li class="navbar-menu-item item4"><a href="#contact" data-scroll>Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="Hero-container" id="hero">
+        <div class="Hero-container section" id="hero" data-scroll-section>
             <div class="Hero-content-title">
                 <h1 class="Hero-content-title-1 slide-in-left">Soham</h1>
                 <h1 class="Hero-content-title-2 slide-in-left">Wadhwa</h1>
@@ -66,8 +65,8 @@
                 Crafting exceptional digital experiences through innovative design and development.
             </div>
             <div class="Hero-content-btns">
-                <a class="btn-3d-animation" href="#projects">View Projects</a>
-                <a class="btn-fill-animation" href="#contact">Get In Touch</a>
+                <a class="btn-3d-animation" href="#projects" data-scroll>View Projects</a>
+                <a class="btn-fill-animation" href="#contact" data-scroll>Get In Touch</a>
             </div>
             <div class="Scroll-animation-container">
                 <div class="scroll-icon">
@@ -76,7 +75,7 @@
                 <div class="scroll-text">SCROLL</div>
             </div>
         </div>
-        <div class="about-me-container" id="about-me">
+        <div class="about-me-container section" id="about-me" data-scroll-section>
             <div class="about-me-title reveal">
                 <div class="title-1">About</div>
                 <div class="title-2">Me</div>
@@ -88,7 +87,7 @@
                 <p>Take a look at my projects to see how I combine my skills and passions to create meaningful work. Let's connect and build something amazing together!</p>
             </div>
         </div>
-        <div class="skills-container" id="skills">
+        <div class="skills-container section" id="skills" data-scroll-section>
             <div class="skills-title reveal">
                 <div>My</div><div>Skills</div>
             </div>
@@ -143,7 +142,7 @@
                 </div>
             </div>
         </div>
-        <div class="project-container" id="projects">
+        <div class="project-container section" id="projects" data-scroll-section>
             <div class="projects-title reveal">
                 <div>My</div><div>Projects</div>
             </div>
@@ -177,9 +176,24 @@
                         </video>
                     </div>  
                 </div>
+                <div class="divider"></div>  
+                <div class="project">
+                    <div class="project-title reveal">
+                        <a class="movie_app" href="https://project-resumify.netlify.app/" target="_blank">Resumify</a>
+                        <i class="fa-solid fa-arrow-right arrow"></i>
+                    </div>
+                    <div class="summary">
+                        A web application to analyze resumes using AI.
+                    </div>
+                    <div class="project-preview">
+                        <video class="vid" muted autoplay loop>
+                            <source src="assets/Resumify-demo.webm" type="video/webm">
+                        </video>
+                    </div>  
+                </div>
             </div>
         </div>
-        <div class="contact-section" id="contact">
+        <div class="contact-section section" id="contact" data-scroll-section>
             <div class="contact-section-title reveal">
                 Let's <span>Connect</span>
             </div>
@@ -204,12 +218,13 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
+        <footer class="footer section">
             <div class="container">
                 <span class="text-muted">© 2025 Soham Wadhwa. All rights reserved.</span>
             </div>
         </footer>
         <a id="backToTop"><i class="ph ph-arrow-up"></i></a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js" defer></script>
 </body>
 </html>
